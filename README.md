@@ -9,3 +9,15 @@ shutdown /s /t 1
 For this to work, you have to import os library in the ide. If you don’t have it, then ‘pip install os‘ through the Command Prompt.
 Causion: Please ensure that you save and close all the program before running this code on the IDLE, as the below program will immediately shut down your computer.
 ```
+### Below is the Python implementation –
+```bash
+import os 
+
+shutdown = input("Do you wish to shutdown your computer ? (yes / no): ") 
+
+if shutdown == 'no': 
+	exit() 
+else: 
+	os.system("shutdown /s /t 1") 
+
+```
